@@ -1,4 +1,6 @@
-exports.seed = function(knex, Promise) {
+import Knex from 'knex';
+
+export const seed = (knex: Knex, _: Promise<any>) => {
   return knex('hubs').insert([
     { name: 'api-1' }, // 1
     { name: 'api-2' }, // 2
